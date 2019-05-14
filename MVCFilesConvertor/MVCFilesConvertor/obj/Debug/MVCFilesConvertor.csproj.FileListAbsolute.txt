@@ -67,3 +67,8 @@ D:\RODINA-zalohaDavidMiriamNoe\David\Programovani\MVCProjects\MVCFilesConvertor\
 D:\RODINA-zalohaDavidMiriamNoe\David\Programovani\MVCProjects\MVCFilesConvertor\MVCFilesConvertor\MVCFilesConvertor\obj\Debug\MVCFilesConvertor.csprojResolveAssemblyReference.cache
 D:\RODINA-zalohaDavidMiriamNoe\David\Programovani\MVCProjects\MVCFilesConvertor\MVCFilesConvertor\MVCFilesConvertor\obj\Debug\MVCFilesConvertor.dll
 D:\RODINA-zalohaDavidMiriamNoe\David\Programovani\MVCProjects\MVCFilesConvertor\MVCFilesConvertor\MVCFilesConvertor\obj\Debug\MVCFilesConvertor.pdb
+D:\RODINA-zalohaDavidMiriamNoe\David\Programovani\MVCProjects\MVCFilesConvertor\MVCFilesConvertor\MVCFilesConvertor\bin\Autofac.dll
+D:\RODINA-zalohaDavidMiriamNoe\David\Programovani\MVCProjects\MVCFilesConvertor\MVCFilesConvertor\MVCFilesConvertor\bin\Autofac.Integration.Mvc.dll
+D:\RODINA-zalohaDavidMiriamNoe\David\Programovani\MVCProjects\MVCFilesConvertor\MVCFilesConvertor\MVCFilesConvertor\bin\Autofac.pdb
+D:\RODINA-zalohaDavidMiriamNoe\David\Programovani\MVCProjects\MVCFilesConvertor\MVCFilesConvertor\MVCFilesConvertor\bin\Autofac.xml
+D:\RODINA-zalohaDavidMiriamNoe\David\Programovani\MVCProjects\MVCFilesConvertor\MVCFilesConvertor\MVCFilesConvertor\bin\Autofac.Integration.Mvc.xml
