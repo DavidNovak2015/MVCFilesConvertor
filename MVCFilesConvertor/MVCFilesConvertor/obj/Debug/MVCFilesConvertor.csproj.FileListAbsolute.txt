@@ -143,6 +143,5 @@ C:\Users\David\Desktop\David\Programovani\MVCProjects\MVCFilesConvertor\MVCFiles
 C:\Users\David\Desktop\David\Programovani\MVCProjects\MVCFilesConvertor\MVCFilesConvertor\MVCFilesConvertor\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\David\Desktop\David\Programovani\MVCProjects\MVCFilesConvertor\MVCFilesConvertor\MVCFilesConvertor\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\David\Desktop\David\Programovani\MVCProjects\MVCFilesConvertor\MVCFilesConvertor\MVCFilesConvertor\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\David\Desktop\David\Programovani\MVCProjects\MVCFilesConvertor\MVCFilesConvertor\MVCFilesConvertor\obj\Debug\MVCFilesConvertor.csprojResolveAssemblyReference.cache
 C:\Users\David\Desktop\David\Programovani\MVCProjects\MVCFilesConvertor\MVCFilesConvertor\MVCFilesConvertor\obj\Debug\MVCFilesConvertor.dll
 C:\Users\David\Desktop\David\Programovani\MVCProjects\MVCFilesConvertor\MVCFilesConvertor\MVCFilesConvertor\obj\Debug\MVCFilesConvertor.pdb

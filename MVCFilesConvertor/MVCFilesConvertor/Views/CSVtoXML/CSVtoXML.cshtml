@@ -1,7 +1,38 @@
-﻿
+﻿@model MVCFilesConvertor.Models.CSVtoXMLViewModel
+
 @{
     ViewBag.Title = "CSVtoXML";
 }
 
-<h2>CSVtoXML</h2>
+<h2>Převod souboru z formátu CSV do XML formátu</h2><br/><br />
+
+<h4>Vložený soubor musí mít v prvním řádku názvy sloupců a od druhého řádku musí být už data. Vložený soubor musí být v CSV formátu. </h4><br /><br />
+
+@using (Html.BeginForm("CSVtoXML", "CSVtoXML", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    Html.AntiForgeryToken();
+    Html.ValidationSummary();
+
+    <div class="form-horizontal">
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CSVfiles, new { @class = "control-label col-md-2"})
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.CSVfiles, new { @type="file", @accept = ".csv", @class = "form-control"})
+                @Html.ValidationMessageFor(model => model.CSVfiles, "", new { @class = "text-danger"})
+            </div>
+        </div>
+
+    </div>
+
+    <div class="form-horizontal">
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="překonvertovat" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+
+}
 
