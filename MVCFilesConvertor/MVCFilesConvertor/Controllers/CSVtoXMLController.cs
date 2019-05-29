@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using MVCFilesConvertor.Models;
 using MVCFilesConvertor.Models.Interfaces;
+using System.IO;
 
 namespace MVCFilesConvertor.Controllers
 {
@@ -32,7 +33,7 @@ namespace MVCFilesConvertor.Controllers
             if (!ModelState.IsValid)
                 return View(cSVtoXMLViewModel);
 
-            TempData["Message"] = cSVtoXMLViewModel.ConvertCSVtoXML(cSVtoXMLViewModel.CSVfiles);
+            TempData["Message"] = cSVtoXMLViewModel.ConvertCSVtoXML(cSVtoXMLViewModel.CSVfile);
 
             return View();
         }

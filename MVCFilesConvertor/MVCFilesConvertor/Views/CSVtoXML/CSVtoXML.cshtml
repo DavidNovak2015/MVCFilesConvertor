@@ -16,10 +16,10 @@
     <div class="form-horizontal">
 
         <div class="form-group">
-            @Html.LabelFor(model => model.CSVfiles, new { @class = "control-label col-md-2"})
+            @Html.LabelFor(model => model.CSVfile, new { @class = "control-label col-md-2"})
             <div class="col-md-10">
-                @Html.TextBoxFor(model => model.CSVfiles, new { @type="file", @accept = ".csv", @class = "form-control"})
-                @Html.ValidationMessageFor(model => model.CSVfiles, "", new { @class = "text-danger"})
+                @Html.TextBoxFor(model => model.CSVfile, new { @type="file", @accept = ".csv", @class = "form-control"})
+                @Html.ValidationMessageFor(model => model.CSVfile, "", new { @class = "text-danger"})
             </div>
         </div>
 

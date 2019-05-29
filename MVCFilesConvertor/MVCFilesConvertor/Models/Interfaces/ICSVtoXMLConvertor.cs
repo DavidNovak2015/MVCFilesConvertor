@@ -10,6 +10,6 @@ namespace MVCFilesConvertor.Models.Interfaces
     public interface ICSVtoXMLConvertor
     {
         // convert of CSV file to XML
-        string ConvertCSVtoXML(HttpPostedFileBase fileInCSVformat);
+        string ReadFromCSVformat(HttpPostedFileBase fileInCSVformat);
     }
 }
