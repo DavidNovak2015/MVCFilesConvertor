@@ -30,9 +30,13 @@ namespace MVCFilesConvertor.Models
         
         // convert of CSV file to XML
         public string ConvertCSVtoXML(HttpPostedFileBase fileInCSVformat)
-        {
-            string result=cSVtoXMLConvertor.ReadFromCSVformat(fileInCSVformat);
-            return "";
+            {
+            string outputFilePath = cSVtoXMLConvertor.ReadFromCSVformatAndSaveIntoXMLformat(fileInCSVformat);
+
+            if (outputFilePath.Contains("Chyba"))
+                return outputFilePath;
+
+            return outputFilePath;
         }
     }
 }

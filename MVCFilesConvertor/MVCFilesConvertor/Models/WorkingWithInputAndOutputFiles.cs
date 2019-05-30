@@ -8,6 +8,7 @@ namespace MVCFilesConvertor.Models
 {
     public static class WorkingWithInputAndOutputFiles
     {
+        // create own directory in AppData, saving the inserted CSV file
         public static string SaveInputFile(HttpPostedFileBase inputFile)
         {
             string path="";
@@ -32,5 +33,20 @@ namespace MVCFilesConvertor.Models
                 return $"Chyba. Nepodařilo se uložit soubor {inputFile.FileName} na cestě:\n\n {path}.\n\n Popis chyby: {ex.Message.ToString()}";
             }
         }
+
+        //Get path for saving XML file
+        public static string GetPathForXMLfile()
+        {
+            string path = "";
+            try
+            {
+                return path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "MVCFilesConvertor\\DataXML.xml");
+                
+            }
+            catch (Exception ex)
+            {
+                return $"Chyba. Nepodařilo se zjistit cestu k uložení dat ve formátu XML. \n\n Popis chyby:\n\n {ex.Message.ToString()}";
+            }
+        } 
     }
 }

@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Output page";
+}
+
+<div class="jumbotron">
+    <h1>Odkaz na výsledný soubor</h1>
+
+    @if (TempData.ContainsKey("OutputFilePath"))
+    {
+        <p class="lead">Níže je uveden odkaz na výsledný soubor</p>
+        @Html.ActionLink("z CSV do XML", "CSVtoXML", controllerName: "CSVtoXML", routeValues: null, htmlAttributes: new { @class = "btn btn-primary btn-lg" })
+    }
+
+    @if (TempData.ContainsKey("Error"))
+    {
+        <p class="lead">@TempData["Error"]</p>
+        @Html.ActionLink("z CSV do XML", "CSVtoXML", controllerName: "CSVtoXML", routeValues: null, htmlAttributes: new { @class = "btn btn-primary btn-lg" })
+    }
+
+</div>
+

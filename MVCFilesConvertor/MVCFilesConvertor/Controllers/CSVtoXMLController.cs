@@ -33,9 +33,9 @@ namespace MVCFilesConvertor.Controllers
             if (!ModelState.IsValid)
                 return View(cSVtoXMLViewModel);
 
-            TempData["Message"] = cSVtoXMLViewModel.ConvertCSVtoXML(cSVtoXMLViewModel.CSVfile);
+            string result= cSVtoXMLViewModel.ConvertCSVtoXML(cSVtoXMLViewModel.CSVfile);
 
-            return View();
+            return RedirectToAction("GetOutputFile", "Home", new { result=result});
         }
     }
 }

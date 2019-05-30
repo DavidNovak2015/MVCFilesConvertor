@@ -12,5 +12,15 @@ namespace MVCFilesConvertor.Controllers
         {
             return View();
         }
+
+        public ActionResult GetOutputFile(string result)
+        {
+            if (result.Contains("Chyba"))
+                TempData["Error"] = result;
+            else
+                TempData["OutputFilePath"] = result;
+
+            return View();
+        }
     }
 }
