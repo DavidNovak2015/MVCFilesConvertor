@@ -4,18 +4,25 @@
 }
 
 <div class="jumbotron">
-    <h1>Odkaz na výsledný soubor</h1>
+    <h1>Odkaz na výsledný soubor</h1><br />
 
     @if (TempData.ContainsKey("OutputFilePath"))
     {
         <p class="lead">Níže je uveden odkaz na výsledný soubor</p>
-        @Html.ActionLink("z CSV do XML", "CSVtoXML", controllerName: "CSVtoXML", routeValues: null, htmlAttributes: new { @class = "btn btn-primary btn-lg" })
+        <h3>@TempData["OutputFilePath"]</h3>
+        @* <a href="@TempData["OutputFilePath"]", class="btn btn-primary btn-lg" download="DataXML.xml">Odkaz ke stažení </a>
+           <a href="file:///C:/Users/David/AppData/Roaming/MVCFilesConvertor/DataXML.xml" , class="btn btn-primary btn-lg" download="DataXML.xml">Odkaz ke stažení </a> *@
+        <br/>
+        @Html.ActionLink("Odstranění složky MVCFilesConvertor včetně souborů z výše uvedené cesty", "DeleteSavedFiles", controllerName: "Home", routeValues: null, htmlAttributes: new { @class = "btn btn-primary btn-lg" })
     }
 
     @if (TempData.ContainsKey("Error"))
     {
         <p class="lead">@TempData["Error"]</p>
+
         @Html.ActionLink("z CSV do XML", "CSVtoXML", controllerName: "CSVtoXML", routeValues: null, htmlAttributes: new { @class = "btn btn-primary btn-lg" })
+
+        @Html.ActionLink("Odstranění složky MVCFilesConvertor včetně souborů z výše uvedené cesty", "DeleteSavedFiles", controllerName: "Home", routeValues: null, htmlAttributes: new { @class = "btn btn-primary btn-lg" })
     }
 
 </div>

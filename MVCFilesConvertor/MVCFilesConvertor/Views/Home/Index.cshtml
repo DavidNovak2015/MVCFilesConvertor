@@ -2,6 +2,11 @@
     ViewBag.Title = "Home Page";
 }
 
+<h3>@if (TempData.ContainsKey("Deletion"))
+{
+    @TempData["Deletion"]
+}
+</h3>
 <div class="jumbotron">
     <h1>Převodník souborů</h1>
     <p class="lead">Převodník souborů umožnuje převést soubor z jednoho formátu do jiného.</p>
