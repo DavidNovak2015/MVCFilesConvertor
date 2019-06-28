@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Web;
 
 namespace MVCFilesConvertor.Models
@@ -13,7 +11,6 @@ namespace MVCFilesConvertor.Models
         // create own directory in AppData, saving the inserted CSV file
         public static string SaveInputFile(HttpPostedFileBase inputFile)
         {
-            //string path="";
             try
             {
                 path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "MVCFilesConvertor");
@@ -39,7 +36,6 @@ namespace MVCFilesConvertor.Models
         //Get path for saving XML file
         public static string GetPathForXMLfile()
         {
-            //string path = "";
             try
             {
                 return path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "MVCFilesConvertor\\DataXML.xml");
@@ -54,7 +50,6 @@ namespace MVCFilesConvertor.Models
         // delete of saved files 
         public static string DeleteSavedFiles()
         {
-            //string path = "";
             try
             {
                 path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "MVCFilesConvertor");
